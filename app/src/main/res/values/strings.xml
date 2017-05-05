@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fuze</string>
+
+    <string name="sign_email">Email</string>
+    <string name="sign_password">Password</string>
+    <string name="sign_login">Log in</string>
+</resources>
