@@ -4,8 +4,8 @@ import android.support.annotation.NonNull;
 
 import com.google.gson.Gson;
 
-import io.gmas.fuze.commons.rx.ApiErrorOperator;
-import io.gmas.fuze.commons.rx.Operators;
+import io.gmas.fuze.commons.rx.operators.ApiErrorOperator;
+import io.gmas.fuze.commons.rx.operators.Operators;
 import io.gmas.fuze.commons.services.apiresponses.CommentEnvelope;
 import io.reactivex.Observable;
 import io.reactivex.schedulers.Schedulers;

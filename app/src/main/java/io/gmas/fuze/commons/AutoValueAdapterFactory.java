@@ -16,7 +16,7 @@
  * ***
  *
  * Original: https://gist.github.com/jakewharton/0d67d01badcee0ae7bc9
- * Modifications: Some modifiers and annotations have been added by Yummypets.
+ * Modifications: Some modifiers and annotations have been added by Guillaume Mas.
  */
 
 package io.gmas.fuze.commons;
