@@ -7,6 +7,7 @@ import io.gmas.fuze.commons.ActivityViewModel;
 import io.gmas.fuze.commons.CurrentUserType;
 import io.gmas.fuze.commons.Shark;
 import io.gmas.fuze.commons.services.ApiUserType;
+import io.gmas.fuze.commons.services.apiresponses.CommentEnvelope;
 import io.gmas.fuze.commons.session.Session;
 import io.gmas.fuze.commons.utils.StringUtils;
 import io.reactivex.Observable;
