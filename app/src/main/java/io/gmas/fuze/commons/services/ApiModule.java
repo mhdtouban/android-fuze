@@ -14,6 +14,9 @@ import io.gmas.fuze.commons.ApiEndpoint;
 import io.gmas.fuze.commons.Build;
 import io.gmas.fuze.commons.CurrentUserType;
 import io.gmas.fuze.commons.qualifiers.ApiRetrofit;
+import io.gmas.fuze.commons.services.deserializers.CommentDeserializer;
+import io.gmas.fuze.commons.services.deserializers.parsers.CommentParserType;
+import io.gmas.fuze.commons.services.deserializers.parsers.impl.CommentParser;
 import io.gmas.fuze.commons.services.interceptors.ApiRequestInterceptor;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -68,18 +71,16 @@ public class ApiModule {
         return new ApiUser(apiUserService, gson);
     }
 
-//    @Provides
-//    @NonNull
-//    ArticleParserType provideArticleParser(final @NonNull AuthorParserType authorParser,
-//                                           final @NonNull CategoryParserType categoryParser,
-//                                           final @NonNull ImageParserType imageParser) {
-//        return new ArticleParser(authorParser, categoryParser, imageParser);
-//    }
+    @Provides
+    @NonNull
+    CommentParserType provideCommentParser() {
+        return new CommentParser();
+    }
 
-//    @Provides
-//    @NonNull
-//    ArticleDeserializer provideArticleDeserializer(final @NonNull ArticleParserType articleParser) {
-//        return new ArticleDeserializer(articleParser);
-//    }
+    @Provides
+    @NonNull
+    CommentDeserializer provideCommentDeserializer(final @NonNull CommentParserType commentParser) {
+        return new CommentDeserializer(commentParser);
+    }
 
 }

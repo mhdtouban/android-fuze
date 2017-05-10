@@ -5,6 +5,7 @@ import android.util.Pair;
 
 import java.util.Map;
 
+import io.gmas.fuze.commons.services.apiresponses.CommentEnvelope;
 import io.reactivex.Observable;
 import io.reactivex.subjects.PublishSubject;
 
@@ -15,4 +16,7 @@ public class MockApiUser implements ApiUserType {
         return observable;
     }
 
+    @Override public @NonNull Observable<CommentEnvelope> fetchComments() {
+        return null;
+    }
 }

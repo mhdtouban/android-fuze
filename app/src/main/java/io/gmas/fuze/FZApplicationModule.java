@@ -34,6 +34,8 @@ import io.gmas.fuze.commons.qualifiers.AccessTokenPreference;
 import io.gmas.fuze.commons.qualifiers.ApplicationContext;
 import io.gmas.fuze.commons.qualifiers.UserPreference;
 import io.gmas.fuze.commons.services.ApiUserType;
+import io.gmas.fuze.commons.services.apiresponses.CommentEnvelope;
+import io.gmas.fuze.commons.services.deserializers.CommentDeserializer;
 import io.gmas.fuze.commons.session.Session;
 import io.reactivex.Scheduler;
 import io.reactivex.schedulers.Schedulers;
@@ -166,11 +168,12 @@ public class FZApplicationModule {
     @Provides
     @Singleton
     @NonNull
-    Gson provideGson() {
+    Gson provideGson(final @NonNull CommentDeserializer commentDeserializer) {
         return new GsonBuilder()
                 .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
                 .registerTypeAdapter(DateTime.class, new DateTimeTypeConverter())
                 .registerTypeAdapterFactory(new AutoValueAdapterFactory())
+                .registerTypeAdapter(CommentEnvelope.class, commentDeserializer)
                 .create();
     }
 
