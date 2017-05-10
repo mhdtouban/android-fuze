@@ -1,4 +1,4 @@
-# Reactive MVVM Sample for Android™
+# Functional Reactive MVVM Sample for Android™
 
 ## Git
 ### Branch
