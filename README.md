@@ -1,15 +1,6 @@
 # Functional Reactive MVVM Sample for Android™
 
 ## Git
-### Branch
-* `master` --> Google Play **PRODUCTION**
-* `staged-rollout` --> Google Play **PRODUCTION** <i>with staged rollout</i>
-* `beta` --> Google Play **BETA**
-* `staging` --> **READY FOR DEPLOYMENT**
-* `development` --> **DEVELOPMENT BRANCH**
-
-**For any news features create a new branch from development**
-
 ### Formatting commit messages
 ```
 $ git commit -am "[... your message ...]"
