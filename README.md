@@ -1,6 +1,6 @@
 # Functional Reactive MVVM Sample for Android™
 
-[![Build Status](https://www.bitrise.io/app/650a1600af02f985/status.svg?token=NCcnVHz6sIXPti5Fulr5tA)](https://www.bitrise.io/app/650a1600af02f985) [![Min SDK](https://img.shields.io/badge/min%20SDK-19-blue.svg)](http://developer.android.com/about/dashboards/index.html#Platform)
+[![Min SDK](https://img.shields.io/badge/min%20SDK-19-blue.svg)](http://developer.android.com/about/dashboards/index.html#Platform)
 
 The project Fuze is an exemple of `MVVM design pattern` in full functional reactive programming `RxJava2, Lambda`, and with dependency injection `Dagger2`, the design pattern makes the app easier to test.
 It's based on Kickstarter oss app for Android™ (migrated from RxJava to RxJava2)
