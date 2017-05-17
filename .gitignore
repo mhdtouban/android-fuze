@@ -46,5 +46,3 @@ app/*.keystore
 
 # Credentials for uploading builds
 config/*.yml
-
-app/src/main/java/io/gmas/fuze/commons/utils/Secrets.java
