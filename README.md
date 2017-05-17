@@ -1,38 +1,5 @@
 # Functional Reactive MVVM Sample for Android™
 
-<<<<<<< Updated upstream
-## Git
-### Branch
-* `master` --> Google Play **PRODUCTION**
-* `staged-rollout` --> Google Play **PRODUCTION** <i>with staged rollout</i>
-* `beta` --> Google Play **BETA**
-* `staging` --> **READY FOR DEPLOYMENT**
-* `development` --> **DEVELOPMENT BRANCH**
-
-**For any news features create a new branch from development**
-
-### Formatting commit messages
-```
-$ git commit -am "[... your message ...]"
-```
-*All commit message line will be cropped at 100 characters*
-
-**Prefixe all your commit messages by one of this type:**
-* `feat:`     A new feature
-* `fix:`      A bug fix
-* `docs:`     Documentation only changes
-* `style:`    Changes that do not affect the meaning of the code (white-space, formatting, etc)
-* `refactor:` A code change that neither fixes a bug or adds a feature
-* `perf:`     A code changes that improves performance
-* `test:`     Adding missing tests
-* `chore:`    Changes to the build process or auxiliary tools and libraries
-
-## Android Version Support
-Android fragmentation analytics --> [Platform Versions](http://developer.android.com/about/dashboards/index.html#Platform)
-=======
-[![Min SDK](https://img.shields.io/badge/min%20SDK-19-blue.svg)](http://developer.android.com/about/dashboards/index.html#Platform)
->>>>>>> Stashed changes
-
 The project Fuze is an exemple of `MVVM design pattern` in full functional reactive programming `RxJava2, Lambda`, and with dependency injection `Dagger2`, the design pattern makes the app easier to test.
 It's based on Kickstarter oss app for Android™ (migrated from RxJava to RxJava2)
 
