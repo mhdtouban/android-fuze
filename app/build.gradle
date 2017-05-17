@@ -17,7 +17,7 @@ android {
     }
 
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "io.gmas.fuze"
         minSdkVersion 19
@@ -59,7 +59,9 @@ android {
     lintOptions {
         quiet true
         warningsAsErrors true
+        lintConfig file(project.rootDir.path + "/app/lint.xml")
     }
+
     applicationVariants.all { variant ->
         def apkName = "Fuze";
         if (variant.buildType.zipAlignEnabled) {
